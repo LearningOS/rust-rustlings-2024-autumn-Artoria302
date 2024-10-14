@@ -87,9 +87,9 @@ impl TryFrom<&[i16]> for Color {
             }
         }
         Ok(Color {
-            red: *slice[0] as u8,
-            green: *slice[1] as u8,
-            blue: *slice[2] as u8,
+            red: slice[0] as u8,
+            green: slice[1] as u8,
+            blue: slice[2] as u8,
         })
     }
 }
